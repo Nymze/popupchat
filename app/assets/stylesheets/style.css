@@ -1,0 +1,282 @@
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  
+  
+}
+
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #ffffff;
+  color: white;
+  padding: 16px 20px;
+  border: 2px solid #f1f1f1;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 65%;
+  right: 45%;
+  height: 100px;
+  width: 100px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+}
+
+#helpIcon{
+  color: #a80c5c;
+
+}
+
+
+a{
+  
+  margin: auto;
+}
+
+h1{
+
+  font-family: 'Montserrat';
+  font-size: 20px;
+  font-weight: 100;
+  margin-bottom: 0;
+  
+}
+
+h2{
+
+  font-family: 'Montserrat';
+  font-size: 12px;
+  font-weight: 50;
+  opacity: 50%;
+  
+}
+
+h3{
+  font-family: 'Montserrat';
+  font-size: 12px;
+  font-weight: 50;
+  margin-left: 10px;
+}
+
+#topIcon{
+  color : white;
+}
+
+.insideform{
+  
+  background-color: #a80c5c;
+  
+  height: 40%;
+}
+
+/* Header of the form */
+
+.intro{
+
+}
+
+.heading{
+  border: solid #a80c5c;
+  height: 100%;
+
+}
+
+.toptitle{
+
+  color: #ffffff;
+  margin-left: 20%;
+  margin-top: 15%;
+}
+
+.secondtitle{
+
+  color: #ffffff;
+  margin-left: 20%;
+  margin-top: 0;
+ 
+
+}
+
+.boxesTop{
+
+  
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  height: 300px;
+  justify-content: start;
+  padding:0;
+
+
+}
+
+
+.box1{
+
+  background-color: white;
+  
+  height: 90px;
+  width: 125px;
+  border-radius: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+
+  -webkit-box-shadow: 16px 24px 83px 20px rgba(224,224,224,0.19);
+-moz-box-shadow: 16px 24px 83px 20px rgba(224,224,224,0.19);
+box-shadow: 16px 24px 83px 20px rgba(224,224,224,0.19);
+
+  
+
+
+}
+
+
+
+
+.box2{
+
+
+  background-color: white;
+  
+  height: 90px;
+  width: 125px;
+  border-radius: 3px;
+  margin: auto;
+  margin-top: 5%;
+
+   -webkit-box-shadow: -16px 48px 83px 20px rgba(224,224,224,0.19);
+  -moz-box-shadow: -16px 48px 83px 20px rgba(224,224,224,0.19);
+  box-shadow: -16px 48px 83px 20px rgba(224,224,224,0.19);
+ 
+
+
+}
+
+
+.box3{
+
+
+  background-color: white;
+  height: 90px;
+  width: 125px;
+  border-radius: 3px;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 25%;
+
+  -webkit-box-shadow: 32px -48px 83px 20px rgba(224,224,224,0.19);
+  -moz-box-shadow: 32px -48px 83px 20px rgba(224,224,224,0.19);
+  box-shadow: 32px -48px 83px 20px rgba(224,224,224,0.19);
+
+
+}
+
+.box4{
+
+
+  background-color: white;
+  height: 90px;
+  width: 125px;
+  border-radius: 3px;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 25%;
+
+  -webkit-box-shadow: -16px -24px 83px 20px rgba(224,224,224,0.19);
+  -moz-box-shadow: -16px -24px 83px 20px rgba(224,224,224,0.19);
+  box-shadow: -16px -24px 83px 20px rgba(224,224,224,0.19);
+ 
+
+
+}
+
+.material-icons{
+  margin: 5px;
+  color: #3da193;
+}
+
+
+
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 2px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  width: 300px;
+  
+  background-color: white;
+  height: 500px ;
+
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+  
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+
+
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  
+  
+  cursor: pointer;
+  
+  margin-bottom:10px;
+
+  opacity: 0.8;
+  margin: auto;
+
+  
+
+
+}
+
+.btn{
+  
+  padding: 5px;
+  height: 100px;
+
+}
+
+
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}

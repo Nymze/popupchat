@@ -1,0 +1,62 @@
+
+<button class="open-button" onclick="openForm()"><i class="material-icons" id="helpIcon">
+live_help
+</i></button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+
+  	<div class="insideform">
+
+  		<div class="heading">
+  			
+  			<%= link_to '<i class="material-icons" id="topIcon">view_headline</i>'.html_safe %>
+  			<h1 class="toptitle"> Bonjour NOM, </h1>
+  			<h2 class="secondtitle"> Nous sommes à votre service pour...</h2>
+
+  		</div>
+
+  		<div class="boxesTop"> 
+
+	  		<div class="box1">
+	  			<%= link_to '<i class="material-icons">search</i>'.html_safe %>
+	  			<h3> réponse rapide </h3>
+	  		</div>
+
+	  		<div class="box2">
+	  			<%= link_to '<i class="material-icons">forum</i>'.html_safe %>
+	  			<h3> assistance en ligne </h3>
+	  		</div>
+
+	  		<div class="box3">
+	  			<%= link_to '<i class="material-icons">today</i>'.html_safe %>
+	  			<h3> Prevoyance </h3>
+	  		</div>
+
+	  		<div class="box4">
+	  			<%= link_to '<i class="material-icons">headset_mic</i>'.html_safe %>
+	  			<h3> Conseiller</h3>
+	  		</div>
+
+  		</div>
+
+  		
+
+	  		
+
+  		
+  		
+  	</div>
+
+  </form>
+</div>
+
+<script>
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+}
+</script>
