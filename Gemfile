@@ -22,7 +22,7 @@ group :development, :test do
   gem 'database_cleaner'
   gem "factory_bot_rails"
   gem 'simplecov'
-  gem 'bootsnap'
+  
 end
 
 group :development do
@@ -42,6 +42,7 @@ group :test do
 end
 
 group :production do
+  gem 'pg', '0.20.0'
   
 end
 
